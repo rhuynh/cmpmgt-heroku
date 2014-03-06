@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Nation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+        <section class="large-4 columns pane pane-left">
+          <nav class="top-bar top-bar-header">
+            <header class="row">
+              <div class="logo small-8 columns">      
+                    <img src="img/HP_logo.png">
+              </div>
+              <div class="small-4 columns">
+                  <i class="fa fa-caret-square-o-left toolbar-icon toolbar-icon-left left"></i>
+                  <i class="fa fa-caret-square-o-right toolbar-icon toolbar-icon-right right"></i>
+              </div>
+            </header>
+          </nav>
+          <section class="container container-side-nav">
+            <ul class="side-nav">
+              <li>
+                <a href="#" data-car="corvette">Chevy Corvette</a>
+              </li>
+              <li>
+                <a href="#" data-car="r8">Audi R8</a>
+              </li>
+              <li>
+                <a href="#" data-car="i8">BMW i8</a>
+            </ul>
+          </section>
+        </section>
+        <section class="large-8 columns pane pane-right">
+          <nav class="top-bar top-bar-toolbar">
+            <div class="left"><a href="#" class="button-back"><i class="fa fa-angle-left fa-2x"></i></a></div>
+            <ul class="button-group right">
+              <li><i class="button fa fa-video-camera"></i></li>
+              <li><i class="button fa fa-picture-o"></i></li>
+              <li><i class="button fa fa-map-marker"></i></li>
+              <li><a href="dist.zip"><i class="button fa fa-download"></i></a></li>
+            </ul>
+          </nav>
+          <section class="container container-detail">
+              <h2 class="title"></h2>
+              <div class="detail">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in gravida mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed in tortor turpis. Nulla pulvinar eget massa sit amet consequat. Phasellus non sapien et leo adipiscing sagittis euismod at nisi. Quisque non lectus cursus, tempus erat non, tempor tortor. Sed mattis purus ultricies magna scelerisque pharetra. Duis blandit, nisl sit amet condimentum commodo, tortor massa blandit arcu, id ullamcorper quam purus non urna. Duis convallis cursus lectus, at tincidunt justo varius vitae. Etiam blandit tortor sit amet nisl rhoncus, ac fermentum lorem ullamcorper. Duis et mauris ultrices, venenatis erat sit amet, gravida turpis. Nullam ac erat nec dui ultrices rhoncus. Phasellus placerat metus non quam vulputate, sit amet consectetur mauris ullamcorper. Sed at lorem ante.</p>
+
+                <p>Vestibulum iaculis diam quis mattis adipiscing. Cras mi enim, convallis et tortor nec, fermentum feugiat mauris. Nunc lectus leo, tristique ut nulla nec, ultrices volutpat metus. Nulla molestie sem sed eros ornare, id consequat elit interdum. Suspendisse commodo condimentum risus. Praesent lobortis, massa sit amet venenatis iaculis, est sem vehicula lectus, laoreet pulvinar elit erat ac mauris. Aliquam erat volutpat. Ut ut mi nec ligula pretium semper. Nulla lacinia malesuada ipsum eu aliquet. Vestibulum non sem convallis, venenatis sapien eu, auctor nisl. Pellentesque ullamcorper venenatis imperdiet. Quisque gravida, lacus vitae rutrum laoreet, odio lacus laoreet enim, sed scelerisque lorem massa et est.</p>
+              </div>
+          </section>
+        </section>
+
+      <!-- Note: tried to get this to load via a seperate view files, but to no avail w/o a webserver -->
+    <script type="text/template" id="view-corvette">
+      <article>
+        <img src="img/001-2014-chevrolet-corvette-opt.jpg">
+        <p class="question">
+          Is that the new Corvette?
+        </p>
+        <p class="answer">
+          Yep, but it's not called the Corvette anymore. For 2014 it's now the Corvette Stingray
+        </p>
+
+        <p class="question">
+          What, so it's got two names?
+        </p>
+        <p class="answer">
+          Yes again. But that's not an entirely new thing. Chevrolet has used the Stingray name before on previous versions of the ‘Vette. If you want to win the pub quiz with this one, it was known as the Corvette Sting Ray from '63-67 - the C2 version - and as the Corvette Stingray from '69-'76 - the middle of the C3 version - and now again in 2014.
+        </p>
+        <p class="question">
+          What's all this C2 and C3 business about?
+        </p>
+        <p class="answer">
+          The C denotes the generation of the Corvette. A bit like Dr Who (without the Daleks and Cybermen), the car has been through six rebirths since it was launched in 1953, so there are six generations. The launch of this new car is the seventh iteration of the Vette, so it's known as the C7.
+        </p>
+        <p class="question">
+          OK, so you're telling me that it's old enough to be the Viper's dad?
+        </p>
+        <p class="answer">
+          I am. But let's not dwell on any other comparisons between the two cars yet. Well, maybe just a couple to give you the picture. Sales of the Viper total under 2,000 a year. Sales of the 'Vette regularly top 12,000, so the big SRT is a much more limited-run car. The other thing to consider is price. The Viper starts at $97,395 while the base version of the Corvette starts at $51,995. There will be pricier versions of the 'Vette later, but for now it's really not worth comparing the two.
+        </p>
+      </article>
+    </script>
+    <script type="text/template" id="view-i8">
+      <article>
+        <img src="img/bmw-i8-progressive-driving-pleasure.jpg">
+        <p>Some cars defy easy classification. BMW has referred to its i8 as “the most progressive sports car of our time,” extending “sustainability to a new vehicle segment.” BMW North America president and CEO Ludwig Willisch has said the i8 “will compete with supercars with its looks and driving performance.” At the same time, BMW claims this plug-in hybrid will be able to drive as far as 22 miles on electric power alone and achieve about 95 mpg—at least on the European test cycle, which provides an advantage to the electric side of the ledger (as does the EPA test). Our admittedly spitballed estimates—there really isn’t a commensurate plug-in for which we have data—for real-world combined-system driving are 40 mpg city and 45 mpg highway.</p>
+        <p>We had a chance to drive a preproduction i8, disguised with blue contact paper that made the car look as if it had been decorated by a white-crayon-wielding kindergarten class. Here’s what we learned: Even with the ridiculous disguise, the i8 is visually exotic. Two inches longer, 4.6 inches wider, and 3.3 inches lower than a 4-series coupe, the i8 has the proportions of a mid-engine car, which it is—at least when you’re referring to the gas-drinking portion of its powertrain. The body has scissor doors and sports several flamboyant aerodynamic flourishes, including flat tunnels formed by the vertically extended rear fenders and lateral extensions of the C-pillars, underbody air intakes at the rear end of the side sills, bladelike ends on the rear fenders, and a radiator exhaust in the middle of the hood. Finished in gleaming paint, most likely two-toned to highlight its layered design language, the i8 will be a stunner.</p>
+      </article>
+    </script>
+    <script type="text/template" id="view-r8">
+      <article>
+        <img src="img/audi-r8-12.jpg">
+        <p>I am. But let's not dwell on any other comparisons between the two cars yet. Well, maybe just a couple to give you the picture. Sales of the Viper total under 2,000 a year. Sales of the 'Vette regularly top 12,000, so the big SRT is a much more limited-run car. The other thing to consider is price. The Viper starts at $97,395 while the base version of the Corvette starts at $51,995. There will be pricier versions of the 'Vette later, but for now it's really not worth comparing the two.</p>
+        <p>Now the mid-engined supercar has been face-lifted for the first time, and a new top model—the R8 Plus—is scheduled to come to the U.S. in the first quarter of 2014. The lineup now consists of the 4.2 FSI with a 430-hp V-8, the 5.2 FSI powered by a 525-hp V-10, and the R8 5.2 FSI Plus sporting a 550-hp V-10. Compared with the regular V-10, the Plus version gets extra power and torque—it makes 398 lb-ft instead of 391—thanks to modified engine management. No hardware is changed. The additional power helps to make the R8 a bit quicker.</p>
+      </article>
+    </script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/jquery.columnizer/src/jquery.columnizer.js"></script>
+    <script src="bower_components/jquery-smartresize/jquery.debouncedresize.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

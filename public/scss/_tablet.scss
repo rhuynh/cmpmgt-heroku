@@ -1,0 +1,19 @@
+@media #{$medium-only} {
+	.button-back {
+		display: none;
+	}
+
+	.pane-left {
+		width: 33.33%;
+	}
+
+	.pane-right {
+		width: 66.67%;
+	}
+
+	.detail {
+		-moz-column-count: initial;
+		-webkit-column-count: initial;
+		column-count: initial;
+	}
+}

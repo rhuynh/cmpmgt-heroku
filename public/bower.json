@@ -1,0 +1,9 @@
+{
+  "name": "foundation-libsass-template",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "jquery.columnizer": "~1.6.1",
+    "fontawesome": "~4.0.3",
+    "jquery-smartresize": "*"
+  }
+}

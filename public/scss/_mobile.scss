@@ -1,0 +1,25 @@
+@media #{$small-only} {
+	body {
+		overflow-x: hidden;
+	}
+
+	.pane-right {
+		-webkit-transition: 1s;
+		transition: left 1s;
+		position: absolute;
+		left: 100%;
+		
+		&.show {
+
+			left: 0;
+		}
+
+		.top-bar-toolbar {
+			padding-top: 6px;
+
+			.button-group {
+				padding-top: 4px;
+			}
+		}
+	}
+}
